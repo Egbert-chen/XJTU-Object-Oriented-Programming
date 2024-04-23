@@ -1,0 +1,15 @@
+rd=input()
+rmd=0
+rrmd=0
+for i in rd:
+    if rmd==0 and i=='*':
+        print('*',end='')
+    else:
+        rmd=1
+    if rmd==1:
+        if i!='*':
+            rrmd=0
+            print(i,end='')
+        else:
+            rrmd+=1
+print('*'*rrmd)
