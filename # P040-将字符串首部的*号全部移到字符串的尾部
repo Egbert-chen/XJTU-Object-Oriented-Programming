@@ -1,0 +1,11 @@
+reader=input()
+rmd=0
+rrmd=0
+for i in reader:
+    if i!="*":
+        rmd=1
+    if rmd==1:
+        print(i,end='')
+        rrmd+=1
+t=len(reader)-rrmd
+print('*'*t)
