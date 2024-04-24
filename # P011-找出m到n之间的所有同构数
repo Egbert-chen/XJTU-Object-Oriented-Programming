@@ -1,0 +1,14 @@
+def chckr(n):
+    m=n*n
+    if (m-n)%(10**len(str(n)))==0:
+        return True
+    else:
+        return False
+
+a,b=map(int,input().split())
+li=[]
+for i in range(a,b+1):
+    if chckr(i):
+        li.append(str(i))
+
+print(' '.join(li))
