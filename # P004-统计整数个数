@@ -1,0 +1,6 @@
+ans=[0]*5
+lst=list(map(int,input().split()))
+for i in lst:
+    ans[i]+=1
+lst1=list(map(lambda x:str(x),ans))
+print(' '.join(lst1))
